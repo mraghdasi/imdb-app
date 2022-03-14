@@ -1,7 +1,7 @@
 import React from 'react';
 import { Spin } from 'antd';
 
-const TcLoading = ({ children, spinning, className, ...props }) => {
+const Loading = ({ children, spinning, className, ...props }) => {
   return (
     <Spin className={className} spinning={spinning} {...props}>
       {children}
@@ -9,4 +9,4 @@ const TcLoading = ({ children, spinning, className, ...props }) => {
   );
 };
 
-export default TcLoading;
+export default Loading;

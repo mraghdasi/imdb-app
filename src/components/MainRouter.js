@@ -1,29 +1,35 @@
 import React, { Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import TcLoading from 'components/UI/Loading/TcLoading';
-import TcLayout from 'components/Layout/TcLayout';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Loading from 'components/UI/Loading/Loading';
+import Layout from 'components/Layout/Layout';
 
 function MainRouter() {
-  const Main = React.lazy(() => import('./pages/Main/Main'));
+  const FilmList = React.lazy(() => import('./pages/Films/List/FilmList'));
+  const WatchList = React.lazy(() => import('./pages/WatchList/List/WatchList'));
 
   const routesList = [
     {
       path: '/',
-      component: Main,
+      component: FilmList,
+    },
+    {
+      path: '/watchList',
+      component: WatchList,
     },
   ];
   return (
     <>
-      <TcLayout>
-        <Suspense fallback={<TcLoading className='grid h-screen place-items-center' />}>
+      <Layout>
+        <Suspense fallback={<Loading className='grid h-screen place-items-center' />}>
           <Routes>
             {routesList.map((route) => (
-              <Route key={route.path} {...route} />
+              <Route key={route.path} path={route.path} element={<route.component />} />
             ))}
-            {/* <Route path='*' element={<Navigate to='/' />} /> */}
+
+            <Route path='*' element={<Navigate to='/' />} />
           </Routes>
         </Suspense>
-      </TcLayout>
+      </Layout>
     </>
   );
 }

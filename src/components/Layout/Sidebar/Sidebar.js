@@ -1,6 +1,6 @@
 import React from 'react';
 import { DoubleRightOutlined, VideoCameraOutlined, HeartOutlined } from '@ant-design/icons';
-import TcMenu from 'components/UI/Menu/TcMenu';
+import Menu from 'components/UI/Menu/Menu';
 import { useEffect } from 'react';
 import useScreenWidth from 'config/global/helperFunctions/useScreenWidth';
 
@@ -18,9 +18,9 @@ const TcSidebar = ({ open, setOpen, horizental }) => {
 
   return (
     <>
-      <TcMenu name='جدیدترین فیلم ها' icon={<VideoCameraOutlined />} to='/' open={open} role={true} />
+      <Menu name='جدیدترین فیلم ها' icon={<VideoCameraOutlined />} to='/' open={open} role={true} />
 
-      <TcMenu name='لیست علاقه مندی' icon={<HeartOutlined />} to='/person' open={open} />
+      <Menu name='لیست علاقه مندی' icon={<HeartOutlined />} to='/watchList' open={open} />
 
       {!horizental && (
         <div className='px-2 mt-auto cursor-pointer' onClick={() => setOpen(!open)}>

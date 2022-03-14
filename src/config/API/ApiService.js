@@ -3,8 +3,7 @@ import cookie from 'js-cookie';
 import { trackPromise } from 'react-promise-tracker';
 
 // urls
-export const BASE_URL = process.env.DEVELOPMENT_BASE_URL || process.env.STAGING_BASE_URL || process.env.PRODUCTION_BASE_URL;
-export const DOMAIN = process.env.DEVELOPMENT_DOMAIN || process.env.STAGING_DOMAIN || process.env.PRODUCTION_DOMAIN;
+export const BASE_URL = 'https://imdb-api.com/en/API/';
 
 export const errorResponse = {};
 

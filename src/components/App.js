@@ -1,15 +1,14 @@
-// import 'antd/dist/antd.css';
 import React from 'react';
 import MainRouter from './MainRouter';
 import { useSelector } from 'react-redux';
-import TcToast from './UI/Toast/TcToast';
+import Toast from './UI/Toast/Toast';
 
 function App({ className }) {
   const toastNotification = useSelector((state) => state.toastData.toastData);
 
   return (
     <div className={`${className}`}>
-      {toastNotification && <TcToast message={toastNotification?.message} type={toastNotification?.type} time={toastNotification?.time} />}
+      {toastNotification && <Toast message={toastNotification?.message} type={toastNotification?.type} time={toastNotification?.time} />}
 
       <MainRouter />
     </div>

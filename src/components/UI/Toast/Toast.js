@@ -2,7 +2,7 @@ import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const TcToast = ({ message, type, time }) => {
+const Toast = ({ message, type, time }) => {
   let toastNotification = null;
 
   if (type === 'success') {
@@ -43,4 +43,4 @@ const TcToast = ({ message, type, time }) => {
   );
 };
 
-export default TcToast;
+export default Toast;

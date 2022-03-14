@@ -1,14 +1,14 @@
-@import '~antd/dist/antd.css';
+@import 'antd/dist/antd.css';
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
 body,
-html,
-.ant-pagination li a,
-.Toastify .Toastify__toast-body div {
-  font-family: iranyekan !important;
+html {
+  font-family: IRANSans !important;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: right;
+  direction: rtl;
 }

@@ -4,7 +4,7 @@ import { MenuOutlined, CaretDownFilled } from '@ant-design/icons';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
-const TcHorizentalSidebar = () => {
+const HorizentalSidebar = () => {
   //states
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
@@ -34,4 +34,4 @@ const TcHorizentalSidebar = () => {
   );
 };
 
-export default TcHorizentalSidebar;
+export default HorizentalSidebar;

@@ -2,7 +2,7 @@ import Sidebar from 'components/Layout/Sidebar/Sidebar';
 import React from 'react';
 import { useState } from 'react';
 
-const TcVerticalSidebar = () => {
+const VerticalSidebar = () => {
   //states
   const [open, setOpen] = useState(false);
 
@@ -15,4 +15,4 @@ const TcVerticalSidebar = () => {
   );
 };
 
-export default TcVerticalSidebar;
+export default VerticalSidebar;

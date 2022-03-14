@@ -1,7 +1,7 @@
 import React from 'react';
 
-const TcContent = ({ children }) => {
-  return <div className='flex-grow-0 w-11/12 mx-auto'>{children}</div>;
+const Content = ({ children }) => {
+  return <div className='flex-grow-0 w-11/12 mx-auto mt-5'>{children}</div>;
 };
 
-export default TcContent;
+export default Content;

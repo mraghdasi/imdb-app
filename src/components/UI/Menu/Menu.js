@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Tooltip, Popover } from 'antd';
 
-const TcMenu = ({ name, icon, to, subMenu, open }) => {
+const Menu = ({ name, icon, to, subMenu, open }) => {
   //state
   const [isOpen, setIsOpen] = useState(false);
 
@@ -115,4 +115,4 @@ const TcMenu = ({ name, icon, to, subMenu, open }) => {
     );
 };
 
-export default TcMenu;
+export default Menu;
