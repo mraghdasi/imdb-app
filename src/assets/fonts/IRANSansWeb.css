@@ -3,22 +3,6 @@ This set of fonts are used in this project under the license: (B6K57Y)
 -------------------------------------------------------------------------------------- */
 
 @font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: normal;
-  src: url('./IRANSansWeb.woff') format('woff');
-}
-
-@font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: normal;
-  src: url('./IRANSansWeb.eot') format('eot');
-}
-
-@font-face {
-  font-family: IRANSans;
-  font-style: normal;
-  font-weight: normal;
-  src: url('./IRANSansWeb.ttf') format('ttf');
+  font-family: 'iransans';
+  src: url('./IRANSansWeb.woff') format('woff'), url('./IRANSansWeb.eot') format('eot'), url('./IRANSansWeb.ttf') format('ttf');
 }

@@ -12,3 +12,51 @@ html {
   text-align: right;
   direction: rtl;
 }
+
+.ant-card-cover img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* image preview wrapper*/
+
+.ant-image-preview-img-wrapper {
+  display: flex !important;
+  min-height: 100% !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ant card*/
+
+.ant-card-body {
+  min-height: 100px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ant-card-meta-title {
+  white-space: initial !important;
+  text-overflow: initial !important;
+}
+
+.ant-image {
+  height: 250px !important;
+}
+
+[type='submit'] {
+  -webkit-appearance: button;
+  background-color: #1890ff !important;
+}
+
+.Toastify__toast {
+  font-family: IRANSans !important ;
+}
+
+.rtl-grid,
+.ant-form-rtl .ant-form-item-label {
+  direction: rtl !important;
+  text-align: right !important;
+}

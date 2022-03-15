@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import toastData from 'redux/reducer/toast/toastReducer';
+import filmSearchStore from 'redux/reducer/film/filmSearchReducer';
 
 export const store = configureStore({
   middleware: (getDefaultMiddleware) =>
@@ -8,5 +9,6 @@ export const store = configureStore({
     }),
   reducer: {
     toastData,
+    filmSearchStore,
   },
 });

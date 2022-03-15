@@ -5,12 +5,17 @@ import Layout from 'components/Layout/Layout';
 
 function MainRouter() {
   const FilmList = React.lazy(() => import('./pages/Films/List/FilmList'));
+  const FilmDetail = React.lazy(() => import('./pages/Films/Detail/FilmDetail'));
   const WatchList = React.lazy(() => import('./pages/WatchList/List/WatchList'));
 
   const routesList = [
     {
-      path: '/',
+      path: '/films',
       component: FilmList,
+    },
+    {
+    path: '/films/detail/:filmId',
+      component: FilmDetail,
     },
     {
       path: '/watchList',
@@ -26,7 +31,7 @@ function MainRouter() {
               <Route key={route.path} path={route.path} element={<route.component />} />
             ))}
 
-            <Route path='*' element={<Navigate to='/' />} />
+            <Route path='*' element={<Navigate to='/films' />} />
           </Routes>
         </Suspense>
       </Layout>

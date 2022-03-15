@@ -1,15 +1,11 @@
 import React from 'react';
 import MainRouter from './MainRouter';
-import { useSelector } from 'react-redux';
-import Toast from './UI/Toast/Toast';
+import ToastRoot from './ToastRoot';
 
 function App({ className }) {
-  const toastNotification = useSelector((state) => state.toastData.toastData);
-
   return (
     <div className={`${className}`}>
-      {toastNotification && <Toast message={toastNotification?.message} type={toastNotification?.type} time={toastNotification?.time} />}
-
+      <ToastRoot />
       <MainRouter />
     </div>
   );

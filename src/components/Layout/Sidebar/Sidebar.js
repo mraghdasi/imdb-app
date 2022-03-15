@@ -18,7 +18,7 @@ const TcSidebar = ({ open, setOpen, horizental }) => {
 
   return (
     <>
-      <Menu name='جدیدترین فیلم ها' icon={<VideoCameraOutlined />} to='/' open={open} role={true} />
+      <Menu name='جدیدترین فیلم ها' icon={<VideoCameraOutlined />} to='/films' open={open} role={true} />
 
       <Menu name='لیست علاقه مندی' icon={<HeartOutlined />} to='/watchList' open={open} />
 
