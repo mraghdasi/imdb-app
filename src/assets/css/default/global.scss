@@ -3,6 +3,21 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: IRANSans;
+  src: url('../../fonts/IRANSansWeb.woff') format('woff');
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url('../../fonts/IRANSansWeb.eot') format('eot');
+}
+
+@font-face {
+  font-family: IRANSans;
+  src: url('../../fonts/IRANSansWeb.ttf') format('ttf');
+}
+
 body,
 html {
   font-family: IRANSans !important;

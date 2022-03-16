@@ -1,8 +1,0 @@
-﻿/* --------------------------------------------------------------------------------------
-This set of fonts are used in this project under the license: (B6K57Y)
--------------------------------------------------------------------------------------- */
-
-@font-face {
-  font-family: 'iransans';
-  src: url('./IRANSansWeb.woff') format('woff'), url('./IRANSansWeb.eot') format('eot'), url('./IRANSansWeb.ttf') format('ttf');
-}
