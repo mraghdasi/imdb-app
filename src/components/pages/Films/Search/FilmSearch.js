@@ -20,7 +20,7 @@ const FilmSearch = ({ setIsLoading, setQueryParam }) => {
     let isRequired = false;
     for (const key in values) {
       values[key];
-      if (values[key] !== undefined) {
+      if (values[key] !== undefined && values[key] !== '') {
         isRequired = true;
         break;
       }
